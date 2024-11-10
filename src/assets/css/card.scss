@@ -1,0 +1,23 @@
+.card {
+  padding: 40px 200px;
+  color: #242424;
+  background-color: #fff;
+  border-radius: 20px;
+
+  &:last-child {
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 576px) {
+    width: 100%;
+    padding: 40px 0;
+  }
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: left;
+}

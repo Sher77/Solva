@@ -1,0 +1,32 @@
+.cardPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  main {
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+  }
+}
+
+.card {
+  position: relative;
+}
+
+.editBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: #000;
+  }
+}
