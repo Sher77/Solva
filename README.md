@@ -1,50 +1,46 @@
-# React + TypeScript + Vite
+# Solva Technology
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Тестовое задание для позиции Junior Front-End Developer
 
-Currently, two official plugins are available:
+Приложение на React с использованием Vite и TypeScript для отображения и управления информацией о различных категориях, таких как Персонажи, Планеты и Корабли. Приложение позволяет пользователю:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Просматривать список элементов в каждой категории.
+- Открывать страницу с подробным описанием выбранного элемента.
+- Редактировать информацию об элементах через модальное окно и сохранять изменения в Redux.
 
-## Expanding the ESLint configuration
+Проект имеет три основные страницы:
+1. **Главная страница** – отображает категории.
+2. **Страница категории** – показывает список элементов.
+3. **Страница элемента** – детализирует информацию с возможностью редактирования.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Запуск проекта локально
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Следуйте инструкциям ниже, чтобы запустить проект на вашем компьютере.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Установка
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Клонируйте репозиторий:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+    ```bash
+    git clone https://github.com/Sher77/Solva.git
+    ```
+
+2. Перейдите в директорию проекта:
+
+    ```bash
+    cd Solva
+    ```
+
+3. Установите зависимости:
+
+    ```bash
+    npm install
+    ```
+
+### Запуск проекта
+
+Для запуска проекта в режиме разработки выполните команду:
+
+```bash
+npm run dev
